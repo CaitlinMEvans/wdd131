@@ -1,0 +1,74 @@
+        /* Reset margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            grid-area: header;
+        }
+
+        /* Navigation bar */
+        nav {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            grid-area: nav;
+        }
+
+        nav a {
+            color: white;
+            padding: 0 15px;
+            text-decoration: none;
+        }
+
+        /* Main layout using grid */
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "header"
+                "nav"
+                "main"
+                "aside"
+                "footer";
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto 1fr auto auto;
+            min-height: 100vh;
+        }
+
+        /* Main content */
+        .main-content {
+            padding: 20px;
+            background-color: #ccc;
+            text-align: center;
+            grid-area: main;
+        }
+
+        /* Aside content */
+        aside {
+            padding: 20px;
+            background-color: #fff;
+            text-align: center;
+            grid-area: aside;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            grid-area: footer;
+        }
