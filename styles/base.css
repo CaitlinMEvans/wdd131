@@ -141,7 +141,7 @@ aside {
 
 aside h3 {
     font-family: 'Oswald', sans-serif;
-    margin-bottom: 1em;
+    margin: 1em 0;
 }
 
 aside ul {
