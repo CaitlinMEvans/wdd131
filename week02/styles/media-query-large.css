@@ -1,0 +1,15 @@
+/* Media query for viewports with a width of 500px or greater */
+@media screen and (min-width: 500px) {
+    /* Change header styling for larger viewports */
+    header {
+        background-color: #000; /* Black background */
+        color: white; /* White text */
+    }
+
+    /* Main element as a two-column grid */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns of equal size */
+        gap: 1rem;
+    }
+}
