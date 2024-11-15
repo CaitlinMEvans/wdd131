@@ -1,0 +1,66 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    margin-right: 10px;
+}
+
+.chapter-entry {
+    background: #e0e0e0;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+input[type="text"] {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    /* margin-top: 1rem; */
+    padding: 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.chapter-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.chapter-list li {
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button.delete {
+    background: none;
+    border: none;
+    color: #f44336;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
