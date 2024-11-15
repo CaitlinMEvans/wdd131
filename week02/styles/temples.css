@@ -11,7 +11,7 @@ body {
     font-family: 'Lora', serif;
     line-height: 1.6;
     margin: 0;
-    background-color: var(--light-gray);
+    background-color: #ddd;
     color: var(--dark-blue);
 }
 
