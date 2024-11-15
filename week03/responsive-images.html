@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Design Activity">
+    <meta name="author" content="Caitlin Evans">
+    <title>Responsive Images Activity | Caitlin Evans</title>
+    <link rel="stylesheet" href="styles/responsive-images.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <!-- <script defer src="../scripts/getdates.js"></script> -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Responsive Images Activity</h1>
+        </header>
+        <main>
+            <div class="hero">
+                <picture>
+                    <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                    <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                    <img src="images/hero-small.webp" alt="San Diego Temple with pink flowers in the foreground" width="1500" height="750">
+                </picture>
+            </div>
+            <p>I added two commented out CSS options for cover and aspect ratio to see those changes based on the container you put around the image etc.</p>
+        </main>
+        <footer>
+            <p>&copy; <span id="copyright-year"></span> Caitlin Evans | Utah, USA</p>
+            <!-- <p>Date Last Modified: <span id="last-modified"></span></p> -->
+        </footer>
+    </div>
+</body>
+</html>

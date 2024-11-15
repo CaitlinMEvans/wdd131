@@ -1,0 +1,19 @@
+/* Responsive Images CSS */
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* If container is not same aspect ratio you can use cover */
+/* .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+/* Or you can use aspect ratio  */
+/* .hero img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 1;
+} */
