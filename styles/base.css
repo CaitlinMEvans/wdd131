@@ -142,11 +142,14 @@ aside {
 aside h3 {
     font-family: 'Oswald', sans-serif;
     margin: 1em 0;
+    background-color: var(--dark-blue);
+    color: var(--yellow);
+    padding: .5em;
 }
 
 aside ul {
     list-style-type: none;
-    padding-left: 0;
+    /* padding-left: 1em; */
     line-height: 1.8;
     margin-bottom: 1em;
 }
