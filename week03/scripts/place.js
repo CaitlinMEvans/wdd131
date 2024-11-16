@@ -42,4 +42,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Set an interval to change the image every 5 seconds
     setInterval(rotateImage, 6000);
+
+    // Update the footer with the current year and last modified date
+    const currentYear = new Date().getFullYear();
+    document.getElementById("copyright-year").textContent = currentYear;
+
+    const lastModified = new Date(document.lastModified).toLocaleDateString("en-IE", {
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+    });
+
+    document.getElementById("last-modified").textContent = lastModified;
 });

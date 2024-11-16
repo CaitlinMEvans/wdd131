@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
     <script defer src="scripts/place.js"></script>
-    <script defer src="../scripts/getdates.js"></script>
 </head>
 <body>
     <header>
@@ -19,9 +18,9 @@
     <main>
         <div class="hero">
             <picture>
-                <source srcset="images/landscape2-large.webp" media="(min-width: 1000px)">
-                <source srcset="images/landscape2-medium.webp" media="(min-width: 500px)">
-                <img id="rotating-image" src="images/landscape2-small.webp" alt="A stunning view of the Cliffs of Moher in Ireland" width="1500" height="750">
+                <source srcset="images/landscape1-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/landscape1-medium.webp" media="(min-width: 500px)">
+                <img id="rotating-image" src="images/landscape1-small.webp" alt="A beautiful landscape in Ireland" width="1500" height="750">
             </picture>
         </div>
         <section class="data">
@@ -48,8 +47,8 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Caitlin Evans | Ireland</p>
-        <p>Date Last Modified: <span id="last-modified"></span></p>
+        <p>&copy; <span id="copyright-year"></span> Caitlin Evans | Ireland</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
     </footer>
 </body>
 </html>
