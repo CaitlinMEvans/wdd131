@@ -1,12 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const images = [
         {
-            large: "images/landscape1-large.webp",
-            medium: "images/landscape1-medium.webp",
-            small: "images/landscape1-small.webp",
-            alt: "A beautiful landscape in Ireland"
-        },
-        {
             large: "images/landscape2-large.webp",
             medium: "images/landscape2-medium.webp",
             small: "images/landscape2-small.webp",
@@ -23,7 +17,13 @@ document.addEventListener("DOMContentLoaded", () => {
             medium: "images/landscape4-medium.webp",
             small: "images/landscape4-small.webp",
             alt: "The majestic Cliffs of Moher during sunset"
-        }
+        },
+        {
+            large: "images/landscape1-large.webp",
+            medium: "images/landscape1-medium.webp",
+            small: "images/landscape1-small.webp",
+            alt: "A beautiful landscape in Ireland"
+        },
     ];
 
     let currentIndex = 0;
@@ -41,5 +41,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Set an interval to change the image every 5 seconds
-    setInterval(rotateImage, 5000);
+    setInterval(rotateImage, 6000);
 });
