@@ -83,6 +83,21 @@ main {
     color: #fff;
     padding: 0.5rem;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.weather-icon {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.weather-icon img {
+    width: 35px;
+    height: 35px;
+    margin-left: 0.5rem;
 }
 
 .data ul, .weather ul {
@@ -93,11 +108,6 @@ main {
 
 .data li, .weather li {
     margin-bottom: 0.5rem;
-}
-
-.weather-icon {
-    font-size: 1.5rem;
-    margin-left: 0.5rem;
 }
 
 footer {
