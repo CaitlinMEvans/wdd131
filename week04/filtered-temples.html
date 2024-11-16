@@ -12,26 +12,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
     <script defer src="../scripts/getdates.js"></script>
-    <script defer src="scripts/temples.js"></script>
+    <script defer src="scripts/filtered-temples.js"></script>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Temple Album</h1>
+            <h1>Filtered Temple Album</h1>
             <button id="menu" aria-label="Toggle menu">☰</button>
             <nav aria-label="Main Navigation">
                 <ul>
-                    <li><a href="#" aria-label="Go to Home Page">Home</a></li>
-                    <li><a href="#" aria-label="Go to Old Page">Old</a></li>
-                    <li><a href="#" aria-label="Go to New Page">New</a></li>
-                    <li><a href="#" aria-label="Go to Large Page">Large</a></li>
-                    <li><a href="#" aria-label="Go to Small Page">Small</a></li>
+                    <li><a href="#" data-filter="all">Home</a></li>
+                    <li><a href="#" data-filter="old">Old</a></li>
+                    <li><a href="#" data-filter="new">New</a></li>
+                    <li><a href="#" data-filter="large">Large</a></li>
+                    <li><a href="#" data-filter="small">Small</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <h2>My Favorite Temples</h2>
-            <div class="temple-grid">
+            <div class="temple-grid" id="templeGrid">
                 <!-- This data will be dynamically updated -->
             </div>
         </main>
