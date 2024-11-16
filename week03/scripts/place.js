@@ -44,17 +44,16 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(rotateImage, 6000);
 
     // Update the footer with the current year and last modified date
+    // Get the current year dynamically
     const currentYear = new Date().getFullYear();
-    document.getElementById("copyright-year").textContent = currentYear;
 
-    const lastModified = new Date(document.lastModified).toLocaleDateString("en-IE", {
-        year: "numeric",
-        month: "2-digit",
-        day: "2-digit",
-        hour: "2-digit",
-        minute: "2-digit",
-        second: "2-digit"
+    // Output the current year to the footer's copyright
+    document.querySelector("footer p").textContent = `© ${currentYear} Caitlin Evans | Ireland`;
+
+    // Get the document's last modified date
+    const lastModified = new Date(document.lastModified);
+    const formattedLastModified = `${String(lastModified.getMonth() + 1).padStart(2, '0')}/${String(lastModified.getDate()).padStart(2, '0')}/${lastModified.getFullYear()}, ${lastModified.toLocaleTimeString()}`;
+
+    // Output the last modified date to the footer's second paragraph
+    document.getElementById("last-modified").textContent = formattedLastModified;
     });
-
-    document.getElementById("last-modified").textContent = lastModified;
-});
