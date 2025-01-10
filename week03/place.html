@@ -1,55 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover the beauty of Ireland with stunning landscapes, data insights, and current weather conditions.">
-    <meta name="author" content="Caitlin Evans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the beauty of Ireland with stunning landscapes, data insights, and current weather conditions."
+    />
+    <meta name="author" content="Caitlin Evans" />
     <title>Discover Ireland</title>
-    <link rel="stylesheet" href="styles/place.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Lora:ital,wght@0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="scripts/place.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Discover Ireland</h1>
+      <h1>Discover Ireland</h1>
     </header>
     <main>
-        <div class="hero">
-            <picture>
-                <source srcset="images/landscape1-large.webp" media="(min-width: 1000px)">
-                <source srcset="images/landscape1-medium.webp" media="(min-width: 500px)">
-                <img id="rotating-image" src="images/landscape1-small.webp" alt="A beautiful landscape in Ireland" width="1500" height="750">
-            </picture>
-        </div>
-        <section class="data">
-            <h2>Data</h2>
-            <ul>
-                <li><strong>Area:</strong> 84,421 sq km</li>
-                <li><strong>Population:</strong> 4,994,724</li>
-                <li><strong>Capital:</strong> Dublin</li>
-                <li><strong>Languages:</strong> English, Irish</li>
-                <li><strong>Currency:</strong> Euro (€)</li>
-                <li><strong>Time Zone:</strong> UTC+0 (GMT)</li>
-                <li><strong>Calling Code:</strong> +353</li>
-                <li><strong>Internet TLD:</strong> .ie</li>
-            </ul>
-        </section>
-        <section class="weather">
-            <h2>Weather <span class="weather-icon"><img src="images/weather.svg.svg" alt="Weather icon"></span></h2>
-            <ul>
-                <li><strong>Temperature:</strong> 10 °C</li>
-                <li><strong>Conditions:</strong> Partly Cloudy</li>
-                <li><strong>Wind:</strong> 5 km/h</li>
-                <li><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></li>
-            </ul>
-        </section>
+      <div class="hero">
+        <picture>
+          <source
+            srcset="images/landscape1-large.webp"
+            media="(min-width: 1000px)"
+          />
+          <source
+            srcset="images/landscape1-medium.webp"
+            media="(min-width: 500px)"
+          />
+          <img
+            id="rotating-image"
+            src="images/landscape1-small.webp"
+            alt="A beautiful landscape in Ireland"
+            width="1500"
+            height="750"
+          />
+        </picture>
+      </div>
+      <section class="data">
+        <h2>Data</h2>
+        <ul>
+          <li><strong>Area:</strong> 84,421 sq km</li>
+          <li><strong>Population:</strong> 4,994,724</li>
+          <li><strong>Capital:</strong> Dublin</li>
+          <li><strong>Languages:</strong> English, Irish</li>
+          <li><strong>Currency:</strong> Euro (€)</li>
+          <li><strong>Time Zone:</strong> UTC+0 (GMT)</li>
+          <li><strong>Calling Code:</strong> +353</li>
+          <li><strong>Internet TLD:</strong> .ie</li>
+        </ul>
+      </section>
+      <section class="weather">
+        <h2>Weather <span class="weather-icon">⛅</span></h2>
+        <ul>
+          <li><strong>Temperature:</strong> 10 °C</li>
+          <li><strong>Conditions:</strong> Partly Cloudy</li>
+          <li><strong>Wind:</strong> 5 km/h</li>
+          <li><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></li>
+        </ul>
+      </section>
     </main>
     <footer>
-        <p>&copy; <span id="copyright-year"></span> Caitlin Evans | Ireland</p>
-        <p>Last Modified: <span id="last-modified"></span></p>
+      <p>&copy; <span id="copyright-year"></span> Caitlin Evans | Ireland</p>
+      <p>Last Modified: <span id="last-modified"></span></p>
     </footer>
-</body>
+  </body>
 </html>

@@ -40,20 +40,34 @@ document.addEventListener("DOMContentLoaded", () => {
         rotatingImage.parentElement.querySelector('source[media="(min-width: 500px)"]').srcset = currentImage.medium;
     }
 
-    // Set an interval to change the image every 5 seconds
+    // Set an interval to change the image every 6 seconds
     setInterval(rotateImage, 6000);
 
+    // Windchill Calculation
+    const temperature = 10; // Static temperature in °C
+    const windSpeed = 5; // Static wind speed in km/h
+
+    function calculateWindChill(temp, speed) {
+        if (temp <= 10 && speed > 4.8) {
+            return (
+                13.12 +
+                0.6215 * temp -
+                11.37 * Math.pow(speed, 0.16) +
+                0.3965 * temp * Math.pow(speed, 0.16)
+            ).toFixed(1); // Return 1 decimal place
+        } else {
+            return "N/A";
+        }
+    }
+
+    const windChill = calculateWindChill(temperature, windSpeed);
+    document.getElementById("wind-chill").textContent = windChill;
+
     // Update the footer with the current year and last modified date
-    // Get the current year dynamically
     const currentYear = new Date().getFullYear();
+    document.getElementById("copyright-year").textContent = currentYear;
 
-    // Output the current year to the footer's copyright
-    document.querySelector("footer p").textContent = `© ${currentYear} Caitlin Evans | Ireland`;
-
-    // Get the document's last modified date
     const lastModified = new Date(document.lastModified);
     const formattedLastModified = `${String(lastModified.getMonth() + 1).padStart(2, '0')}/${String(lastModified.getDate()).padStart(2, '0')}/${lastModified.getFullYear()}, ${lastModified.toLocaleTimeString()}`;
-
-    // Output the last modified date to the footer's second paragraph
     document.getElementById("last-modified").textContent = formattedLastModified;
-    });
+});
