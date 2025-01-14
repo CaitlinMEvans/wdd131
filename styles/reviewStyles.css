@@ -1,0 +1,97 @@
+:root {
+    --bright-red: #E02411;
+    --bright-yellow: #FFA913;
+    --bright-orange: #ff851b;
+    --light-blue: #569CED;
+    --medium-blue: #1E4EA0;
+    --dark-blue: #001f3f;
+  }
+  
+  body {
+    font-family: 'Lora', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    /* background-color: #000000; Black background */
+    color: #000; /* White text */
+  }
+  
+  header {
+    background-color: var(--bright-red);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 80vh;
+  }
+  
+  .confirmation {
+    background-color: var(--dark-blue);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .confirmation p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: var(--bright-yellow);
+  }
+  
+  button {
+    background-color: var(--bright-red);
+    color: #ffffff;
+    border: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: var(--bright-orange);
+    text-decoration: underline;
+    color: #000;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--dark-blue);
+    color: #ffffff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 1.8em;
+    }
+  
+    .confirmation {
+      padding: 15px;
+    }
+  
+    button {
+      font-size: 1em;
+      padding: 8px 15px;
+    }
+  }
+  

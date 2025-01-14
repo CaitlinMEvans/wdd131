@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles/reviewStyles.css" />
+    <script defer src="scripts/review.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Review Submitted Successfully</h1>
+    </header>
+    <main>
+      <div class="confirmation">
+        <p>Thank you for submitting your review!</p>
+        <p>
+          Your thoughts on <span id="selected-product"></span> have been saved.
+        </p>
+        <p>
+          This is your <span id="review-count"></span> review. Keep them coming!
+        </p>
+        <button onclick="window.location.href='form.html'">
+          Submit Another Review
+        </button>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="copyright-year"></span> Caitlin Evans | Back to the
+        Future Fan
+      </p>
+      <p>Date Last Modified: <span id="last-modified"></span></p>
+    </footer>
+  </body>
+</html>

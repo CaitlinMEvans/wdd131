@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Back to the Future - Product Review</title>
+    <link rel="stylesheet" href="styles/formStyles.css" />
+    <script defer src="scripts/form.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Back to the Future Product Review</h1>
+    </header>
+    <main>
+      <form id="review-form" action="review.html" method="get">
+        <!-- Product Name -->
+        <label for="product">Select a Product:</label>
+        <select id="product" name="product" required>
+          <option value="" disabled selected>Select a Product...</option>
+          <!-- Options populated dynamically with JavaScript -->
+        </select>
+
+        <!-- Overall Rating -->
+        <fieldset>
+          <legend>Futuristic Level (1-10):</legend>
+          <div class="rating">
+            <!-- Radio buttons populated dynamically in JS-->
+          </div>
+        </fieldset>
+
+        <!-- Date of Installation -->
+        <label for="installation-date">Date of Installation:</label>
+        <input
+          type="date"
+          id="installation-date"
+          name="installation-date"
+          required
+        />
+
+        <!-- Useful Features -->
+        <fieldset>
+          <legend>Useful Features (check all that apply):</legend>
+          <div class="features">
+            <input
+              type="checkbox"
+              id="feature-delorean"
+              name="features"
+              value="Delorean"
+            />
+            <label for="feature-delorean">Works with a DeLorean</label>
+          </div>
+          <div class="features">
+            <input
+              type="checkbox"
+              id="feature-gigawatts"
+              name="features"
+              value="Gigawatts"
+            />
+            <label for="feature-gigawatts">Powered by 1.21 Gigawatts</label>
+          </div>
+          <div class="features">
+            <input
+              type="checkbox"
+              id="feature-hoverboard"
+              name="features"
+              value="Hoverboard"
+            />
+            <label for="feature-hoverboard">Hoverboard Compatibility</label>
+          </div>
+        </fieldset>
+
+        <!-- Written Review -->
+        <label for="review">Written Review (optional):</label>
+        <textarea
+          id="review"
+          name="review"
+          rows="4"
+          placeholder="Share your thoughts..."
+        ></textarea>
+
+        <!-- User Name -->
+        <label for="username">Your Name (optional):</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your name"
+        />
+
+        <!-- Submit Button -->
+        <button type="submit" id="submit-button">
+          Engage the Flux Capacitor
+        </button>
+      </form>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="copyright-year"></span> Caitlin Evans | Back to the
+        Future Fan
+      </p>
+      <p>Date Last Modified: <span id="last-modified"></span></p>
+    </footer>
+  </body>
+</html>

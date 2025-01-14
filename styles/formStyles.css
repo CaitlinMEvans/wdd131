@@ -1,0 +1,174 @@
+:root {
+  --bright-red: #E02411;
+  --bright-yellow: #ffdc00;
+  --bright-orange: #ff851b;
+  --light-blue: #569CED;
+  --medium-blue: #1E4EA0;
+  --dark-blue: #001f3f;
+}
+
+/* General Styles */
+body {
+  font-family: 'Lora', serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #ffffff; /* White text */
+}
+
+header {
+  background-color: var(--bright-red);
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+header h1 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 80vh;
+}
+
+form {
+  background-color: var(--dark-blue);
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  width: 60%;
+}
+
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: var(--bright-yellow)
+}
+
+input, select, textarea, button {
+  width: 97%;
+  padding: 10px;
+  margin: 0 0 20px 0;
+  border: 2px solid #ff851b; /* Orange */
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 1em;
+}
+
+.features input{
+  margin-bottom: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--medium-blue)
+}
+
+button {
+  background-color: var(--bright-red);
+  color: #ffffff;
+  border: none;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #ff851b; /* Orange */
+  color: black;
+}
+
+fieldset {
+  border: 2px solid #0074d9; /* Bright blue */
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-size: 1.5em;
+  color: var(--bright-yellow)
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.rating div {
+  display: flex; /* Ensures proper alignment of stars */
+  align-items: center;
+}
+
+.rating label {
+  display: inline-block;
+  color: #ffdc00; /* Yellow stars */
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.features {
+  display: flex;
+  align-items: center; /* Align items in the center vertically */
+  /* gap: 10px; Space between the checkbox and label */
+}
+
+.features input{
+  max-width: 5%;
+  margin: 0;
+}
+
+.features label{
+  margin: 0;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between checkbox and label text */
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #001f3f; /* Dark blue */
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  form {
+    padding: 15px;
+  }
+
+  label, legend {
+    font-size: 1em;
+  }
+
+  button {
+    font-size: 1em;
+    padding: 10px;
+  }
+}
