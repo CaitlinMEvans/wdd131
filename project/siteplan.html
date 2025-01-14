@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width" />
     <meta
       name="description"
-      content="This is the Main project Plan for WDS 131 class. "
+      content="This is the Main project Plan for WDS 131 class."
     />
     <meta name="author" content="Caitlin Evans" />
     <title>WDD 131 - Dynamic Web Fundamentals | Caitlin Evans</title>
     <link rel="stylesheet" href="styles/base.css" />
-    <!-- <link rel="stylesheet" href="styles/layout.css" /> -->
+    <link rel="stylesheet" href="styles/sitePlanStyles.css" />
     <!-- GOOGLE FONTS PRECONNECT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- GOOGLE FONTS -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Lora:ital,wght@0,400;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;1,400&family=PT+Sans:wght@400;700&family=Delius&display=swap"
       rel="stylesheet"
     />
     <script defer src="scripts/getdates.js"></script>
@@ -24,58 +24,42 @@
   <body>
     <div class="container">
       <header>
-        <h1>Site Plan</h1>
-        <nav aria-label="Main Navigation">
-          <ul>
-            <li><a href="#" aria-label="Go to Home Page">Home</a></li>
-            <li>
-              <a href="#" target="_blank" aria-label="View my Final Project"
-                >Final Project</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p23-p27#p27"
-                aria-label="View my favorite Scripture"
-                >Favorite Scripture</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://byui.instructure.com/"
-                target="_blank"
-                aria-label="Visit I-Learn"
-                >I-Learn</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                aria-label="Visit LinkedIn"
-                >LinkedIn</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                aria-label="Visit Facebook"
-                >Facebook</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <h1 class="header-main">Site Plan</h1>
       </header>
       <main>
         <div class="main-content">
           <section class="card">
-            <h2>Project: New Venture Therapy</h2>
+            <h2 class="header-main">Project: New Venture Therapy</h2>
+            <h3>Logo Example:</h3>
             <img
+              id="logo"
               src="images/NVT_intro.png"
               width="400"
               alt="Business Introduction: New Venture Therapy"
             />
+            <h3>Website Heading example:</h3>
+            <section class="hero">
+              <div class="hero-content">
+                <p class="text-special-400 special-subtitle">
+                  Are you looking for
+                </p>
+                <h1 class="hero-heading">
+                  Professional guidance <br />
+                  for <span class="highlight">mental health.</span>
+                </h1>
+                <p class="hero-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                  quam velit, vulputate eu pharetra nec, mattis ac neque. Duis
+                  vulputate commodo lectus, ac blandit elit tincidunt id. Sed
+                  rhoncus, tortor sed.
+                </p>
+                <div class="hero-buttons">
+                  <a href="#" class="btn btn-primary">Book an Appointment</a>
+                  <a href="#" class="btn btn-secondary">Browse Specialties</a>
+                </div>
+              </div>
+            </section>
+
             <h3>Site Purpose:</h3>
             <p>
               A private practice for those seeking trauma therapy or therapy in
@@ -143,24 +127,6 @@
             </li>
           </ul>
           <h3>NVT Logos</h3>
-          <!-- <h4>Primary Logo</h4>
-          <img
-            src="images/logo_primary.svg"
-            width="200"
-            alt="New Venture Therapy Full Name Logo Horizontal"
-          />
-          <h4>Secondary Logo</h4>
-          <img
-            src="images/logo_secondary.svg"
-            width="200"
-            alt="New Venture Therapy Condensed Name Logo Horizontal"
-          />
-          <h4>Logo Icon</h4>
-          <img
-            src="images/logo_icon.svg"
-            width="200"
-            alt="New Venture Therapy Icon only logo"
-          /> -->
           <img
             src="images/NVT_logoOptions.png"
             width="350"
