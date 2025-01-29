@@ -1,0 +1,31 @@
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .hamburger-menu {
+      display: flex;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      background-color: var(--background-light);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      padding: 1em;
+      border-radius: 10px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .hero-heading {
+      font-size: 2rem;
+    }
+  
+    .hero-description {
+      font-size: 0.9rem;
+    }
+  }
+  

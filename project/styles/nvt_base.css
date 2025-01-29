@@ -1,0 +1,178 @@
+/* Base Colors */
+:root {
+    --primary-red: #ff595e;
+    --primary-yellow: #ffb703;
+    --primary-orange: #ff8701;
+    --primary-blue: #49b6ff;
+    --primary-green: #8ac926;
+    --secondary-purple: #6a4c93;
+    --secondary-orange: #ffa903;
+    --secondary-green: #8ac926;
+    --secondary-blue: #49b6ff;
+    --background-light: #ffffff;
+  }
+  
+/* Base Styling */
+body {
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: var(--background-light);
+  }
+  
+  header .logo img {
+    max-height: 20rem;
+  }
+  
+/* Navigation Container */
+nav {
+    display: flex;
+    justify-content: space-between; /* Space between left and right groups */
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 1.5em;
+    list-style: none;
+    margin: 0;
+    flex: 2; /* Allow space for alignment */
+    justify-content: center; /* Center the first 3 links */
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  .nav-links li a:hover {
+    text-decoration: underline;
+  }
+
+  /* "Book Now" Button */
+  .btn-book-now {
+    margin-left: auto; /* Push it to the far right */
+    background-color: var(--primary-blue);
+    color: var(--background-light);
+    padding: 0.5em 1em;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+  }  
+
+  .btn-book-now:hover {
+    text-decoration: underline;
+  }  
+
+  .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.3em;
+  }
+  
+  .hamburger-menu span {
+    height: 3px;
+    width: 25px;
+    background-color: var(--primary-blue);
+  }
+    /* Hero Section */
+    .hero {
+        text-align: center;
+      }
+      
+      .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      
+      .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      
+      .hero-subheading {
+        font-family: 'Delius', sans-serif;
+        font-size: 1.1rem; /* Slightly larger for better visibility */
+        color: var(--primary-color);
+        margin-bottom: -25px;
+        transform: rotate(-8deg); /* Rotate for style */
+        font-weight: bold;
+        display: inline-block; /* Prevent unexpected line wrapping */
+        color: var(--primary-red)
+      }
+      
+      .hero-heading {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #000; /* Black color */
+        margin: 0 0 1em;
+      }
+      
+      .hero-heading .highlight {
+        color: #ff595e; /* Highlight text with red */
+      }
+      
+      .hero-description {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 1rem;
+        color: #333; /* Dark gray */
+        margin: 1em 0 2em;
+        line-height: 1.8;
+      }
+      
+      /* Buttons */
+      .hero-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1.5em;
+      }
+      
+      .btn {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 1rem;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 0.75em 1.5em;
+        border-radius: 25px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        display: inline-block;
+      }
+      
+      .btn-primary {
+        background-color: #ff595e;
+        color: white;
+        border: none;
+      }
+      
+      .btn-primary:hover {
+        text-decoration: underline;
+      }
+      
+      .btn-secondary {
+        background-color: transparent;
+        color: #000; /* Black text */
+        border: 2px solid #000;
+      }
+      
+      .btn-secondary:hover {
+        background-color: #000;
+        color: #FFF;
+        text-decoration: underline;
+      }
