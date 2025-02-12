@@ -954,6 +954,8 @@ text-decoration: none;
   width: 100%;
   display: block;
   border-radius: 12px;
+  min-height: 300px;
+  object-fit: cover;
 }
 
 .specialty-label {

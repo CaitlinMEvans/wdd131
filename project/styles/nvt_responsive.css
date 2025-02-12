@@ -107,6 +107,23 @@
       border-radius: 20px;
     }
 
+    .specialty-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .specialty-card img {
+      min-height: 460px;
+  }
+
+    .experience-container {
+      flex-direction: column;
+    }
+  
+    .experience-header {
+      position: relative;
+      text-align: center;
+    }
+
     .cta-container {
       flex-direction: column;
     }
@@ -237,24 +254,14 @@
     .values-container {
       grid-template-columns: 1fr;
     }
-  
+
     .specialty-container {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr;
     }
 
-    .experience-container {
-      flex-direction: column;
-    }
-  
-    .experience-header {
-      position: relative;
-      text-align: center;
-    }
-  } 
-  @media (max-width: 500px) {
-        /* about Page */
-        .specialty-container {
-          grid-template-columns: 1fr;
-        }
-
+    .specialty-card img {
+      min-height: 300px;
+      max-height: 300px;
   }
+
+  } 
