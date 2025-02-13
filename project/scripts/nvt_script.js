@@ -33,8 +33,8 @@ function insertHeader() {
                 <div class="nav-links-mobile">
                     <ul>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Services (not coded)</a></li>
+                        <li><a href="#">FAQs (not coded)</a></li>
                         <li class="book-now-mobile">
                             <a href="book.html" class="btn-book-now">Book Now</a>
                         </li>

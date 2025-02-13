@@ -264,4 +264,19 @@
       max-height: 300px;
   }
 
+  @media (max-width: 500px) {
+    main{
+      margin: 0 1rem;
+    }
+
+    main section .bg-black{
+      margin: 0;
+    }
+
+    .appointment-section {
+      padding: 0;
+    }
+
+  }
+
   } 
